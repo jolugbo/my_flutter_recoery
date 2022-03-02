@@ -7,7 +7,7 @@ class Meme{
   Meme(this.id, this.imageUrl, this.caption, this.category);
   Meme.fromJson(Map<String, dynamic> json)
   : id = json["id"],
-    imageUrl = json["imageUrl"],
+    imageUrl = json["imageUrl"] ?? "",
     caption = json["caption"],
     category = json["category"];
 }

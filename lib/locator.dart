@@ -6,6 +6,11 @@ import 'domain/meme_conrtoller.dart';
 final locator = GetIt.instance;
 
 void setup(){
-  locator.registerSingleton<MemeRepo>(MemeRepo());
-  locator.registerLazySingleton<MemeDomainController>(() => MemeDomainController());
+  print("entered setup");
+  locator.registerLazySingleton<MemeRepo>(
+        () => MemeRepo(),
+  );
+  locator.registerLazySingleton<MemeDomainController>(
+        () => MemeDomainController(),
+  );
 }

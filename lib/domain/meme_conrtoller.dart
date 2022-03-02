@@ -3,6 +3,6 @@ import '../repository/meme_repo.dart';
 
 class MemeDomainController{
   getNextMeme()async{
-     locator.get<MemeRepo>().getMeme();
+    return await locator.get<MemeRepo>().getMeme();
   }
 }

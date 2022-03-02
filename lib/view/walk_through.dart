@@ -104,7 +104,6 @@ class _WalkThroughPageState extends State<WalkThroughPage> {
                       ),
                       onPressed: () async {
                         //_incrementCounter;
-                        print("got here");
                         Meme meme = await locator.get<MemeDomainController>().getNextMeme();
                         print(meme);
                       },
