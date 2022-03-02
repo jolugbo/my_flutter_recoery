@@ -1,5 +1,5 @@
-import '../locator.dart';
-import '../repository/meme_repo.dart';
+import '../../locator.dart';
+import '../../repository/data_connectors/meme_repo.dart';
 
 class MemeDomainController{
   getNextMeme()async{

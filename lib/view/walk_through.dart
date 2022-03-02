@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter_recovery/view/walk_through2.dart';
 
-import '../domain/meme_conrtoller.dart';
+import '../domain/controllers/meme_conrtoller.dart';
 import '../domain/models/meme.dart';
 import '../locator.dart';
 import '../styles/main_style.dart';
