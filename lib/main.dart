@@ -1,7 +1,8 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:my_flutter_recovery/pages/walk_through.dart';
+import 'package:my_flutter_recovery/view/walk_through.dart';
 import 'package:my_flutter_recovery/splash.dart';
+
 
 
 void main() {
@@ -28,9 +29,10 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
+      //routes: appRoutes,
       home: AnimatedSplashScreen(
           splash:Icons.home,
-          splashTransition: SplashTransition.fadeTransition,
+          splashTransition: SplashTransition.fadeTransition,duration: 1500,
           nextScreen: WalkThroughPage(title: 'main view',)),
     );
   }

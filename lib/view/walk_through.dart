@@ -1,5 +1,8 @@
 
 import 'package:flutter/material.dart';
+import 'package:my_flutter_recovery/view/walk_through2.dart';
+
+import '../styles/main_style.dart';
 
 class WalkThroughPage extends StatefulWidget {
   const WalkThroughPage({Key? key, required this.title}) : super(key: key);
@@ -30,6 +33,7 @@ class _WalkThroughPageState extends State<WalkThroughPage> {
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
       _counter++;
+      //Navigator.pushReplacement(context, WalkThrough2Page())
     });
   }
 
@@ -68,11 +72,41 @@ class _WalkThroughPageState extends State<WalkThroughPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
+              'You are on pate one',style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold),
+            ),
+            const Text(
               'You have pushed the button this many times:',
             ),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
+            ),
+
+            Container(
+              alignment: Alignment.center,
+              child:
+              Hero(
+                tag: "btnInvestingTag",
+                child:
+                ButtonTheme(
+                    minWidth: MediaQuery.of(context).size.width,
+                    height: 50.0,
+                    child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                      child: Text(
+                        'Create Account',
+                        style: lightBodyStyle,
+                      ),
+                      onPressed: () {
+                        _incrementCounter;
+                      },
+                      color: demoGreen,
+                    )),
+              ),
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height * 0.1,
             ),
           ],
         ),

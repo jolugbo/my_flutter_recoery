@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_flutter_recovery/pages/walk_through.dart';
+import 'package:my_flutter_recovery/view/walk_through.dart';
 
 
 class Splash extends StatefulWidget {
