@@ -3,9 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:my_flutter_recovery/view/walk_through.dart';
 import 'package:my_flutter_recovery/splash.dart';
 
+import 'locator.dart';
+
 
 
 void main() {
+  setup();
   runApp(const MyApp());
 }
 
